@@ -7,11 +7,11 @@ public class User {
     private final String NAME;
     private static AtomicInteger defaultNameID = new AtomicInteger(1);
 
-    public User(String NAME) {
-        if (NAME.trim().equals("")) {
-            NAME = "User" + defaultNameID.getAndIncrement();
+    public User(String name) {
+        if (name.trim().equals("")) {
+            name = "User" + defaultNameID.getAndIncrement();
         }
-        this.NAME = NAME;
+        this.NAME = name;
     }
 
     public String getNAME() {

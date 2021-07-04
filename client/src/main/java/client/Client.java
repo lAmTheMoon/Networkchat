@@ -10,9 +10,9 @@ public class Client {
     private final int PORT;
     private final File LOG_FILE = new File("client", "file.log");
 
-    public Client(String HOST, int PORT) {
-        this.HOST = HOST;
-        this.PORT = PORT;
+    public Client(String host, int port) {
+        this.HOST = host;
+        this.PORT = port;
     }
 
     public void start() {

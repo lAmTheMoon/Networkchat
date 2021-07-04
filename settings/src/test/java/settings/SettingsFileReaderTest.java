@@ -24,7 +24,6 @@ class SettingsFileReaderTest {
 
     @Test
     void getHostFromSettings() {
-
         String[] result;
         try (BufferedReader reader = new BufferedReader(new FileReader("../settings.txt"))) {
             result = reader.readLine().split(":");
